@@ -28,19 +28,6 @@ class Main {
                 default:
                     System.out.println("Такой команды пока нет\n");
             }
-//            if (command == 1){
-//                steptracker.addNewNumberStepsPerDay();
-//            } else if (command == 2) {
-//                steptracker.changeStepGoal();
-//            } else if (command == 3) {
-//                steptracker.printStatistic();
-//            } else if (command == 4) {
-//                System.out.println("До встречи");
-//                scanner.close();
-//                return;
-//            } else {
-//                System.out.println("Такой команды пока нет\n");
-//            }
         }
     }
 
