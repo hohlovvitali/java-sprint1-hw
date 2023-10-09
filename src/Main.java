@@ -11,19 +11,36 @@ class Main {
             System.out.println("Выберите команду");
             int command = scanner.nextInt();
 
-            if (command == 1){
-                steptracker.addNewNumberStepsPerDay();
-            } else if (command == 2) {
-                steptracker.changeStepGoal();
-            } else if (command == 3) {
-                steptracker.printStatistic();
-            } else if (command == 4) {
-                System.out.println("До встречи");
-                scanner.close();
-                return;
-            }else {
-                System.out.println("Такой команды пока нет\n");
+            switch (command){
+                case 1:
+                    steptracker.addNewNumberStepsPerDay();
+                    break;
+                case 2:
+                    steptracker.changeStepGoal();
+                    break;
+                case 3:
+                    steptracker.printStatistic();
+                    break;
+                case 4:
+                    System.out.println("До встречи");
+                    scanner.close();
+                    return;
+                default:
+                    System.out.println("Такой команды пока нет\n");
             }
+//            if (command == 1){
+//                steptracker.addNewNumberStepsPerDay();
+//            } else if (command == 2) {
+//                steptracker.changeStepGoal();
+//            } else if (command == 3) {
+//                steptracker.printStatistic();
+//            } else if (command == 4) {
+//                System.out.println("До встречи");
+//                scanner.close();
+//                return;
+//            } else {
+//                System.out.println("Такой команды пока нет\n");
+//            }
         }
     }
 
